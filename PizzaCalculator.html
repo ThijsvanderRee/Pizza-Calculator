@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<script>
+
+		//Thijs van der Ree
+		//Opdracht: De Pizza Calculator
+
+		const smallprijs = 5.00;
+		const mediumprijs = 6.50;
+		const largeprijs = 8.00;
+
+		var small = prompt('Aantal small pizzas.', "");
+		var medium = prompt('Aantal medium pizzas.', "");
+		var large = prompt('Aantal large pizzas.', "");
+
+		document.write('De' + ' ' + parseFloat (small) + ' ' + 'small pizzas kosten, ' + smallprijs * small + ' euro' + '<br> </br>');
+		document.write('De' + ' ' + parseFloat (medium) + ' ' + 'medium pizzas kosten, ' + mediumprijs * medium + ' euro' + '<br> </br>');
+		document.write('De' + ' ' + parseFloat (large) + ' ' + 'large pizzas kosten, ' + largeprijs * large + ' euro' + '<br> </br>');
+
+		var totaalsmall = (smallprijs * small);
+		var totaalmedium = (mediumprijs * medium);
+		var totaallarge = (largeprijs * large);
+
+		document.write('Dat kost dan samen, ' + (parseFloat (totaalsmall) + parseFloat (totaalmedium) + parseFloat (totaallarge))+ ' euro.');
+
+	</script>
+</body>
+</html>
